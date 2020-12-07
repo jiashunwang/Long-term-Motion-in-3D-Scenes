@@ -3,8 +3,8 @@
 
     <head>
         <link rel="StyleSheet" href="style.css" type="text/css" media="all">
-        <title>Neural Pose Transfer</title>
-        <meta property="og:title" content="Neural Pose Transfer by Spatially Adaptive Instance Normalization">
+        <title>Long-term Motion in 3D Scenes</title>
+        <meta property="og:title" content="Synthesizing Long-Term 3D Human Motion and Interaction in 3D Scenes">
         <!-- <meta property="og:image" content="https://www.cs.cmu.edu/~wyuan1/cmr/resources/images/shapenet.png"> -->
         <!-- <meta property="og:url" content="https://youtu.be/bzJrPQilPxg"> -->
         <!-- Place this tag in your head or just before your close body tag. -->
@@ -28,39 +28,29 @@
     
                     <td align="center" width="100px">
                         <div class="center-div">
-                            <span style="font-size:22px"><a href="#">Chao Wen</a></span>
+                            <span style="font-size:22px"><a href="#">Huazhe Xu</a></span>
                         </div>
                     </td>
     
                     <td align="center" width="100px">
                         <div class="center-div">
-                            <span style="font-size:22px"><a href="#">Yanwei Fu</a></span>
+                            <span style="font-size:22px"><a href="#">Jingwei Xu</a></span>
                         </div>
                     </td>
     
                     <td align="center" width="100px">
                         <div class="center-div">
-                            <span style="font-size:22px"><a href="#">Haitao Lin</a></span>
+                            <span style="font-size:22px"><a href="#">Sifei Liu</a></span>
                         </div>
                     </td>
 
                     <td align="center" width="100px">
                         <div class="center-div">
-                            <span style="font-size:22px"><a href="#">Tianyun Zou</a></span>
+                            <span style="font-size:22px"><a href="#">Xiaolong Wang</a></span>
                         </div>
                     </td>
 
-                    <td align="center" width="100px">
-                        <div class="center-div">
-                            <span style="font-size:22px"><a href="#">Xiangyang Xue</a></span>
-                        </div>
-                    </td>
-
-                    <td align="center" width="100px">
-                        <div class="center-div">
-                            <span style="font-size:22px"><a href="#">Yinda Zhang</a></span>
-                        </div>
-                    </td>
+                    
     
                 </tr>
             </tbody>
@@ -71,7 +61,7 @@
                 <tr>
                     <td align="center" width="100px">
                         <div class="center-div">
-                            <span style="font-size:22px">Fudan University &nbsp; &nbsp; Google Research</span>
+                            <span style="font-size:22px">UC San Diego &nbsp; &nbsp; UC Berkeley</span>
                         </div>
                     </td>
                 </tr>
@@ -115,19 +105,7 @@
             <h1>Abstract</h1>
         </div>
         <p>
-            Pose transfer has been studied for decades, in which the pose of a source mesh is applied 
-            to a target mesh. Particularly in this paper, we are interested in transferring the pose of 
-            source human mesh to deform the target human mesh, while the source and target meshes may 
-            have different identity information. Traditional studies assume that the paired source and 
-            target meshes are existed with the point-wise correspondences of user annotated landmarks/mesh 
-            points, which requires heavy labelling efforts. On the other hand, the generalization ability 
-            of deep models is limited, when the source and target meshes have different identities. To 
-            break this limitation, we propose the first neural pose transfer model that solves the pose 
-            transfer via the latest technique for image style transfer, leveraging the newly proposed 
-            component -- spatially adaptive instance normalization. Our model does not require any 
-            correspondences between the source and target meshes. Extensive experiments show that the 
-            proposed model can effectively transfer deformation from source to target meshes, and has 
-            good generalization ability to deal with unseen identities or poses of meshes.
+            Synthesizing 3D human motion plays an important role in many graphics applications as well as understanding human activity. While many efforts have been made on generating realistic and natural human motion, most approaches neglect the importance of modeling human-scene interactions and affordances. On the other hand, affordance reasoning (e.g., standing on the floor or sitting on the chair) has mainly been studied with static human pose and gestures, and it has rarely been addressed with human motion. In this paper, we propose to bridge human motion synthesis and scene affordance reasoning. We present a hierarchical generative framework which synthesizes long-term 3D human motion conditioning on the 3D scene structure. We also further enforce multiple geometry constraints between the human mesh and scene point clouds via optimization to improve realistic synthesis. Our experiments show significant improvements over previous approaches on generating natural and physically plausible human motion in a scene.
         </p>
         <br><br>
 
