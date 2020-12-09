@@ -182,8 +182,17 @@
     <div class="gap-20"></div>
     Our model takes N video frames as inputs and predicts the object locations for the future T timesteps, as illustrated above. We first extract the image feature representation using a ConvNet for each frame, and then apply RoI pooling to obtain object-centric visual features. These object feature representations are forwarded to the interaction modules to perform interaction reasoning and predict future object locations.
 The whole pipeline is trained end-to-end by minimizing the loss between predicted and the ground-truth object locations. Since the parameters of each interaction module is shared so we can apply this process recurrently over time to an arbitrary T during testing.
--->
+--> 
     <hr>
+
+    <div class="gap-20"></div>
+    <b><span style="font-size:20px">Video:</span></b><br>
+    <div class="gap-5"></div>
+
+    <div class="gap-20"></div>
+
+    <iframe width="720" height="400" src="https://www.youtube.com/watch?v=iDrjIGrJz2Q&feature=youtu.be" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
 
     <b><span style="font-size:20px">Qualitative Results:</span></b><br>
     <div class="gap-10"></div>
@@ -228,7 +237,39 @@ The whole pipeline is trained end-to-end by minimizing the loss between predicte
 
     </div>
 
-    
+    <div class="gap-10"></div>
+    <center><b><span style="font-size:18px"> Changing body shape \(\theta\) </span></b></center>
+    <div class="gap-10"></div>
+
+    <div class="row no-gutters">
+      <div class="col-3">
+        <img src="./vis/realb/gt_009_015.gif" style="margin:1em;max-width:95%">
+      </div>
+
+      <div class="col-3">
+        <img src="./vis/realb/pred_009_015.gif" style="margin:1em;max-width:95%">
+      </div>
+
+      <div class="col-3">
+        <img src="./vis/realb/gt_009_028.gif" style="margin:1em;max-width:95%">
+      </div>
+      
+    <div class="gap-10"></div>
+    <center><b><span style="font-size:18px"> Changing latent z </span></b></center>
+    <div class="gap-10"></div>
+
+    <div class="row no-gutters">
+      <div class="col-3">
+        <img src="./vis/realb/gt_009_015.gif" style="margin:1em;max-width:95%">
+      </div>
+
+      <div class="col-3">
+        <img src="./vis/realb/pred_009_015.gif" style="margin:1em;max-width:95%">
+      </div>
+
+      <div class="col-3">
+        <img src="./vis/realb/gt_009_028.gif" style="margin:1em;max-width:95%">
+      </div>
 
     <hr>
 <!--
