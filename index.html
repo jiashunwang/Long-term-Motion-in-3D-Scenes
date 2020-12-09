@@ -183,7 +183,7 @@
     Our model takes N video frames as inputs and predicts the object locations for the future T timesteps, as illustrated above. We first extract the image feature representation using a ConvNet for each frame, and then apply RoI pooling to obtain object-centric visual features. These object feature representations are forwarded to the interaction modules to perform interaction reasoning and predict future object locations.
 The whole pipeline is trained end-to-end by minimizing the loss between predicted and the ground-truth object locations. Since the parameters of each interaction module is shared so we can apply this process recurrently over time to an arbitrary T during testing.
 --> 
-    <hr>
+    
 
     <div class="gap-20"></div>
     <b><span style="font-size:20px">Video:</span></b><br>
@@ -193,6 +193,7 @@ The whole pipeline is trained end-to-end by minimizing the loss between predicte
 
     <iframe width="720" height="400" src="https://www.youtube.com/watch?v=iDrjIGrJz2Q&feature=youtu.be" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     
+    <hr>
 
     <b><span style="font-size:20px">Qualitative Results:</span></b><br>
     <div class="gap-10"></div>
@@ -253,6 +254,7 @@ The whole pipeline is trained end-to-end by minimizing the loss between predicte
       <div class="col-3">
         <img src="./vis/realb/gt_009_028.gif" style="margin:1em;max-width:95%">
       </div>
+    </div>
       
     <div class="gap-10"></div>
     <center><b><span style="font-size:18px"> Changing latent z </span></b></center>
@@ -270,7 +272,7 @@ The whole pipeline is trained end-to-end by minimizing the loss between predicte
       <div class="col-3">
         <img src="./vis/realb/gt_009_028.gif" style="margin:1em;max-width:95%">
       </div>
-
+    </div>
     <hr>
 <!--
     <b><span style="font-size:20px">Paper:</span></b><br>
