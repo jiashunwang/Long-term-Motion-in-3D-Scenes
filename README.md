@@ -4,7 +4,7 @@ This is an implementation of the CVPR'21 paper "Synthesizing Long-Term 3D Human 
 
 Please check our [paper](https://arxiv.org/pdf/2012.05522.pdf) and the [project webpage](https://jiashunwang.github.io/Long-term-Motion-in-3D-Scenes/) for more details.
 
-#### Citation
+## Citation
 
 If you use our code or paper, please consider citing:
 ```
@@ -33,6 +33,10 @@ We use [PROX](https://prox.is.tue.mpg.de/) and [PROXE](https://github.com/yz-cns
 ## Demo
 We provide `demo.ipynb` to help you play with our method. Before running, please put a downsampled `MPH16.ply` mesh and the SDF data of this scene in './demo_data/'. You can download them from [PROX](https://prox.is.tue.mpg.de/) and [PROXE](https://github.com/yz-cnsdqz/PSI-release). Still, please be careful with the camera extrinsics when you want to test other scenes, make sure the human body is in the scene. It will also show you how to optimize the whole motion using our code.
 
+## Models
+We use [SMPL-X](https://github.com/vchoutas/smplify-x). Please the SMPL-X models in './models/' and it's like './models/smplx/SMPLX_NEUTRAL.npz'.
+We also provide our pretrained model [here]
+
 ## Training
 After you generate the data. You can train the networks directly,
 ```
@@ -45,10 +49,7 @@ Please train the posenet after you finished training routenet with your own pret
 ```
 python train_pose.py
 ``` 
-Please train the posenet after you finished training routenet with your own pretrained routenet model,
-```
-python train_pose.py
-```
+
 
 
 ## Acknowledgement
