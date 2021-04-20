@@ -39,7 +39,7 @@ We provide `demo.ipynb` to help you play with
 method. Before running, please put a downsampled `MPH16.ply` mesh and the SDF data of this scene in './demo_data/'. You can download them from [PROX](https://prox.is.tue.mpg.de/) and [PROXE](https://github.com/yz-cnsdqz/PSI-release). Still, please be careful with the camera extrinsics when you want to test other scenes, make sure the human body is in the scene. It will also show you how to optimize the whole motion using our code.
 
 ## Models
-We use [SMPL-X](https://github.com/vchoutas/smplify-x) to represent human bodies. Please download the SMPL-X models and put them in './models/' and it may look like './models/smplx/SMPLX_NEUTRAL.npz'. Please download [vposer](https://github.com/nghorbani/human_body_prior) model and put it in './'
+We use [SMPL-X](https://github.com/vchoutas/smplify-x) to represent human bodies. Please download the SMPL-X models and put them in './models/' and it may look like './models/smplx/SMPLX_NEUTRAL.npz'. Please download [vposer](https://github.com/nghorbani/human_body_prior) model and put it in './' ('./vposer_v1_0/').
 
 We also provide our pretrained model [here](https://drive.google.com/file/d/1xRb56tUrrefnffgisWudH8gmKaACX9Ap/view?usp=sharing)
 
