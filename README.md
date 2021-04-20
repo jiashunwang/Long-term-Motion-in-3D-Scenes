@@ -28,7 +28,7 @@ Requirements:
 - [SMPL-X](https://github.com/vchoutas/smplify-x)
 
 ## Datasets
-We use [PROX](https://prox.is.tue.mpg.de/) and [PROXE](https://github.com/yz-cnsdqz/PSI-release) datasets as our training data. After downloading them, please put them in './data/'. We provide `generate_routepose_data.ipynb` and `generate_sub_data.ipynb` for data generation. Note in PROX, the human meshes and the scene meshes are not in the same area in the world coordinates. Different from PROX and PROXE, we apply the inverse of the camera extrinsics to the scene mesh. Since the scene is the input and we need it to be aligned with the human bodies. This is done in the data generation code. Thus for contact calculating, you do not need to apply transformation to them. While for collision calculating, you still need to apply the transformation to the human bodies similar to [PROXE](https://github.com/yz-cnsdqz/PSI-release) to be aligned with SDF. Please be careful with this during training or testing, especially if you want to test on other scenes such as [Matterport3D](https://github.com/niessner/Matterport). Please put body_segments data in './data/' as well.
+We use [PROX](https://prox.is.tue.mpg.de/) and [PROXE](https://github.com/yz-cnsdqz/PSI-release) datasets as our training data. After downloading them, please put them in './data/'. We provide `generate_routepose_data.ipynb` and `generate_sub_data.ipynb` for data generation. Note in PROX, the human meshes and the scene meshes are not in the same area in the world coordinates. Different from PROX and PROXE, we apply the inverse of the camera extrinsics to the scene mesh. Since the scene is the input and we need it to be aligned with the human bodies. This is done in the data generation code. Thus for contact calculating, you do not need to apply transformation to them. While for collision calculating, you still need to apply the transformation to the human bodies similar to [PROXE](https://github.com/yz-cnsdqz/PSI-release) to make it be aligned with SDF. Please be careful with this during training or testing, especially if you want to test on other scenes such as [Matterport3D](https://github.com/niessner/Matterport). Please put body_segments data in './data/' as well.
 
 ## Demo
 We provide `demo.ipynb` to help you play with 
@@ -59,6 +59,7 @@ python train_pose.py
 
 
 ## Acknowledgement
+This work was supported, in part, by grants from DARPA LwLL, NSF 1730158 CI-New: Cognitive Hardware and Software Ecosystem Community Infrastructure (CHASE-CI), NSF ACI-1541349 CC*DNI Pacific Research Platform, and gifts from Qualcomm and TuSimple.
 Part of our code is based on [PROXE](https://github.com/yz-cnsdqz/PSI-release) and it may help you with the dependencies and dataset parts as well. Many thanks!
 
 ## License
