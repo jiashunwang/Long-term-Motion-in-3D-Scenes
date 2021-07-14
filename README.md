@@ -36,7 +36,6 @@ We provide `demo.ipynb` to help you play with our method. Before running, please
 ## Models
 We use [SMPL-X](https://github.com/vchoutas/smplify-x) to represent human bodies. Please download the SMPL-X models and put them in './models/' and it may look like './models/smplx/SMPLX_NEUTRAL.npz'. Please download [vposer](https://github.com/nghorbani/human_body_prior) model and put it in './' ('./vposer_v1_0/').
 
-We also provide our pretrained model [here](https://drive.google.com/file/d/1xRb56tUrrefnffgisWudH8gmKaACX9Ap/view?usp=sharing)
 
 ## Training
 After you generate the data. You can train the networks directly,
