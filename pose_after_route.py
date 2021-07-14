@@ -94,7 +94,7 @@ class POSEAFTERROUTE(nn.Module):
         path=self.fc_path(path)
         outputs=torch.cat([outputs,pointfea,path],dim=1)
 
-        outputs=self.fc(outputs)
+        outputs=F.relu(self.fc(outputs))
         outputs=self.fc2(outputs)
 
         outputs=outputs.reshape(batch_size,60,self.input_dim)
