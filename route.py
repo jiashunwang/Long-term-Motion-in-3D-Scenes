@@ -98,7 +98,7 @@ class ROUTENET(nn.Module):
         pointfea = self.fc_scene(pointfea)
         outputs  = torch.cat([outputs,pointfea],dim=1)
         
-        outputs = self.fc(outputs)
+        outputs = F.relu(self.fc(outputs))
         outputs = self.fc2(outputs)
         
         outputs = outputs.reshape(batch_size,60,self.input_dim)
