@@ -83,12 +83,7 @@ class PointNetDenseCls(nn.Module):
 
 
 
-################################################################################
-## Conditional VAE of the human body, 
-## Input: 72/75-dim, [T (3d vector), R (3d/6d), shape (10d), pose (32d), 
-#         lefthand (12d), righthand (12d)]
-## Note that, it requires pre-trained VPoser and latent variable of scene
-################################################################################
+
 
 class Pointnet(nn.Module):
     def __init__(self):
