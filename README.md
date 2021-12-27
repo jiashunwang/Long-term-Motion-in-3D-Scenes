@@ -55,7 +55,7 @@ python train_pose.py
 
 
 ## Acknowledgement
-This work was supported, in part, by grants from DARPA LwLL, NSF 1730158 CI-New: Cognitive Hardware and Software Ecosystem Community Infrastructure (CHASE-CI), NSF ACI-1541349 CC*DNI Pacific Research Platform, and gifts from Qualcomm and TuSimple.
+This work was supported, in part, by grants from DARPA LwLL, NSF 1730158 CI-New: Cognitive Hardware and Software Ecosystem Community Infrastructure (CHASE-CI), NSF ACI-1541349 CC\*DNI Pacific Research Platform, and gifts from Qualcomm and TuSimple.
 Part of our code is based on [PROXE](https://github.com/yz-cnsdqz/PSI-release) and it may help you with the dependencies and dataset parts as well. Many thanks!
 
 ## License
